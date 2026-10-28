@@ -1,0 +1,1 @@
+/opt/gem5/build/X86/gem5.opt --outdir=/workspace/project/results/gemm/o3_l1d64kB_l2_256kB /workspace/project/configs/run_experiment.py --binary /workspace/project/benchmarks/gemm_x86 --binary_args '32 ijk' --cpu_type O3CPU --l1d_size 64kB --l1i_size 32kB --l2_size 256kB

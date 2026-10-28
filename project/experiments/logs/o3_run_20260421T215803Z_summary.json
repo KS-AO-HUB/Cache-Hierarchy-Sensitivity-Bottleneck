@@ -1,0 +1,34 @@
+{
+  "config_script": "/workspace/project/configs/run_experiment.py",
+  "experiments_executed": 1,
+  "experiments_requested": 1,
+  "failures": 0,
+  "gem5_bin": "/opt/gem5/build/X86/gem5.opt",
+  "manifest_path": "/workspace/project/experiments/l2_fix_n256_2mb_resume.json",
+  "manifest_snapshot_path": "/workspace/project/experiments/logs/o3_run_20260421T215803Z_manifest_snapshot.json",
+  "results_root": "/workspace/project/results",
+  "runs": [
+    {
+      "benchmark": "gemm",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "256 ijk",
+      "cpu_type": "O3CPU",
+      "duration_seconds": 2480.319,
+      "ended_at_utc": "2026-04-21T22:39:23.719861+00:00",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "2MB",
+      "log_file": "/workspace/project/results/gemm/n256_l1d32_l2_2MB/run.log",
+      "outdir": "/workspace/project/results/gemm/n256_l1d32_l2_2MB",
+      "return_code": 0,
+      "started_at_utc": "2026-04-21T21:58:03.399713+00:00",
+      "stats_json": "/workspace/project/results/gemm/n256_l1d32_l2_2MB/stats.json",
+      "stats_txt": "/workspace/project/results/gemm/n256_l1d32_l2_2MB/stats.txt",
+      "status": "success",
+      "tag": "n256_l1d32_l2_2MB"
+    }
+  ],
+  "session_ended_at_utc": "2026-04-21T22:39:23.795379+00:00",
+  "session_id": "o3_run_20260421T215803Z",
+  "session_started_at_utc": "2026-04-21T21:58:03.327730+00:00"
+}

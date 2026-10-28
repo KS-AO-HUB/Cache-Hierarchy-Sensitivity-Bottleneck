@@ -1,0 +1,95 @@
+{
+  "description": "Final 10-run O3-only matrix for bottleneck attribution",
+  "experiments": [
+    {
+      "benchmark": "gemm",
+      "tag": "n128_baseline_l1d32_l2_256",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "128 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n128_l1d16_l2_256",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "128 ijk",
+      "l1d_size": "16kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n128_l1d64_l2_256",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "128 ijk",
+      "l1d_size": "64kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n128_l1d32_l2_128",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "128 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "128kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n128_l1d32_l2_512",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "128 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "512kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n128_l1d32_l2_1MB",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "128 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "1MB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n32_baseline_l1d32_l2_256",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "32 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n64_baseline_l1d32_l2_256",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "64 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n192_baseline_l1d32_l2_256",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "192 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n256_baseline_l1d32_l2_256",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "256 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB"
+    }
+  ]
+}

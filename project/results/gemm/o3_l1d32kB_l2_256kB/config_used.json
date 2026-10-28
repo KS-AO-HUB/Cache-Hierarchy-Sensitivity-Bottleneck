@@ -1,0 +1,11 @@
+{
+  "benchmark": "gemm",
+  "binary": "/workspace/project/benchmarks/gemm_x86",
+  "binary_args": "32 ijk",
+  "cpu_type": "O3CPU",
+  "l1d_size": "32kB",
+  "l1i_size": "32kB",
+  "l2_size": "256kB",
+  "outdir": "/workspace/project/results/gemm/o3_l1d32kB_l2_256kB",
+  "tag": "o3_l1d32kB_l2_256kB"
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Follow-up L2 capacity remediation at N=256 (O3-only). Compare larger L2 against baseline 256kB result already captured as n256_baseline_l1d32_l2_256.",
+  "experiments": [
+    {
+      "benchmark": "gemm",
+      "tag": "n256_l1d32_l2_512",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "256 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "512kB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n256_l1d32_l2_1MB",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "256 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "1MB"
+    },
+    {
+      "benchmark": "gemm",
+      "tag": "n256_l1d32_l2_2MB",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "256 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "2MB"
+    }
+  ]
+}

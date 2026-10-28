@@ -1,0 +1,50 @@
+```
+root@8930b4428004:/workspace/project/benchmarks# /opt/gem5/build/X86/gem5.opt \
+    --outdir=/workspace/project/results/test_run \
+    /workspace/project/configs/run_experiment.py \
+    --binary /workspace/project/benchmarks/gemm_x86 \
+    --binary_args "16 ijk" \
+    --cpu_type TimingSimpleCPU \
+    --l1d_size 32kB \
+    --l2_size 256kB
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.0.0.1
+gem5 compiled Feb  7 2026 23:39:26
+gem5 started Mar 24 2026 23:15:12
+gem5 executing on 8930b4428004, pid 6647
+command line: /opt/gem5/build/X86/gem5.opt --outdir=/workspace/project/results/test_run /workspace/project/configs/run_experiment.py --binary /workspace/project/benchmarks/gemm_x86 --binary_args '16 ijk' --cpu_type TimingSimpleCPU --l1d_size 32kB --l2_size 256kB
+
+============================================================
+  Binary:    /workspace/project/benchmarks/gemm_x86
+  Args:      ['16', 'ijk']
+  CPU:       TimingSimpleCPU
+  L1D:       32kB
+  L1I:       32kB
+  L2:        256kB
+============================================================
+Global frequency set at 1000000000000 ticks per second
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+board.remote_gdb: Listening for connections on port 7000
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.cc:74: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:74: warn: ignoring syscall rseq(...)
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.hh:1075: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/workspace/project/benchmarks/gemm_x86'
+src/sim/syscall_emul.cc:74: warn: ignoring syscall mprotect(...)
+Matrix Multiplication Benchmark
+================================
+Matrix size: 16 x 16
+Kernel:      ijk
+
+Running ijk kernel...
+
+=== RESULTS ===
+Time:        0.000015 seconds
+GFLOP/s:     0.545
+Max error:   0.00e+00
+
+root@8930b4428004:/workspace/project/benchmarks# 
+```

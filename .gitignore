@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+m5out/
+build/
+.DS_Store
+Thumbs.db
+desktop.ini

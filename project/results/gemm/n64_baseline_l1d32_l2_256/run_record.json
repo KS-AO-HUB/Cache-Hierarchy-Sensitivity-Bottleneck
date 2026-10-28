@@ -1,0 +1,19 @@
+{
+  "benchmark": "gemm",
+  "binary": "/workspace/project/benchmarks/gemm_x86",
+  "binary_args": "64 ijk",
+  "cpu_type": "O3CPU",
+  "duration_seconds": 18.878,
+  "ended_at_utc": "2026-04-21T19:08:38.286553+00:00",
+  "l1d_size": "32kB",
+  "l1i_size": "32kB",
+  "l2_size": "256kB",
+  "log_file": "/workspace/project/results/gemm/n64_baseline_l1d32_l2_256/run.log",
+  "outdir": "/workspace/project/results/gemm/n64_baseline_l1d32_l2_256",
+  "return_code": 0,
+  "started_at_utc": "2026-04-21T19:08:19.408269+00:00",
+  "stats_json": "/workspace/project/results/gemm/n64_baseline_l1d32_l2_256/stats.json",
+  "stats_txt": "/workspace/project/results/gemm/n64_baseline_l1d32_l2_256/stats.txt",
+  "status": "success",
+  "tag": "n64_baseline_l1d32_l2_256"
+}

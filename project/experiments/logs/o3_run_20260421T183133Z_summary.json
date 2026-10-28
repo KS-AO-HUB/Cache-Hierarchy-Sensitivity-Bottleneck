@@ -1,0 +1,53 @@
+{
+  "config_script": "/workspace/project/configs/run_experiment.py",
+  "experiments_executed": 2,
+  "experiments_requested": 2,
+  "failures": 0,
+  "gem5_bin": "/opt/gem5/build/X86/gem5.opt",
+  "manifest_path": "/workspace/project/experiments/final_o3_manifest.json",
+  "manifest_snapshot_path": "/workspace/project/experiments/logs/o3_run_20260421T183133Z_manifest_snapshot.json",
+  "results_root": "/workspace/project/results",
+  "runs": [
+    {
+      "benchmark": "gemm",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "32 ijk",
+      "cpu_type": "O3CPU",
+      "duration_seconds": 9.562,
+      "ended_at_utc": "2026-04-21T18:31:42.874859+00:00",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB",
+      "log_file": "/workspace/project/results/gemm/o3_l1d32kB_l2_256kB/run.log",
+      "outdir": "/workspace/project/results/gemm/o3_l1d32kB_l2_256kB",
+      "return_code": 0,
+      "started_at_utc": "2026-04-21T18:31:33.313182+00:00",
+      "stats_json": "/workspace/project/results/gemm/o3_l1d32kB_l2_256kB/stats.json",
+      "stats_txt": "/workspace/project/results/gemm/o3_l1d32kB_l2_256kB/stats.txt",
+      "status": "success",
+      "tag": "o3_l1d32kB_l2_256kB"
+    },
+    {
+      "benchmark": "gemm",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "32 ijk",
+      "cpu_type": "O3CPU",
+      "duration_seconds": 8.624,
+      "ended_at_utc": "2026-04-21T18:31:51.578660+00:00",
+      "l1d_size": "64kB",
+      "l1i_size": "32kB",
+      "l2_size": "256kB",
+      "log_file": "/workspace/project/results/gemm/o3_l1d64kB_l2_256kB/run.log",
+      "outdir": "/workspace/project/results/gemm/o3_l1d64kB_l2_256kB",
+      "return_code": 0,
+      "started_at_utc": "2026-04-21T18:31:42.954162+00:00",
+      "stats_json": "/workspace/project/results/gemm/o3_l1d64kB_l2_256kB/stats.json",
+      "stats_txt": "/workspace/project/results/gemm/o3_l1d64kB_l2_256kB/stats.txt",
+      "status": "success",
+      "tag": "o3_l1d64kB_l2_256kB"
+    }
+  ],
+  "session_ended_at_utc": "2026-04-21T18:31:51.605862+00:00",
+  "session_id": "o3_run_20260421T183133Z",
+  "session_started_at_utc": "2026-04-21T18:31:33.148376+00:00"
+}

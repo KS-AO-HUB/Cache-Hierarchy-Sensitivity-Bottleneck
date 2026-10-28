@@ -1,0 +1,14 @@
+{
+  "description": "Resume interrupted N=256 L2=2MB remediation run (O3-only).",
+  "experiments": [
+    {
+      "benchmark": "gemm",
+      "binary": "/workspace/project/benchmarks/gemm_x86",
+      "binary_args": "256 ijk",
+      "l1d_size": "32kB",
+      "l1i_size": "32kB",
+      "l2_size": "2MB",
+      "tag": "n256_l1d32_l2_2MB"
+    }
+  ]
+}
